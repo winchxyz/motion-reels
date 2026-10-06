@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Motion Reels by Nick Oxman</title>
+<meta name="description" content="Short motion videos made with AI and code by Nick Oxman.">
+<style>
+  :root { --bg: #f4f6f8; --card: #ffffff; --ink: #17202b; --muted: #5d6876; --line: #dde3ea; --accent: #1f4e79; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0f1419; --card: #182029; --ink: #e8edf2; --muted: #9aa6b4; --line: #26313d; --accent: #7fb0ec; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Arial, sans-serif; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 30px; margin: 0 0 6px; }
+  .lead { color: var(--muted); margin: 0 0 6px; max-width: 65ch; }
+  .lead a { color: var(--accent); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; margin-top: 28px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; }
+  .card.tall video { aspect-ratio: 9 / 16; max-height: 560px; }
+  video { width: 100%; display: block; background: #000; aspect-ratio: 16 / 9; }
+  .meta { padding: 12px 14px 14px; }
+  .meta h2 { font-size: 17px; margin: 0 0 4px; }
+  .meta p { margin: 0; color: var(--muted); font-size: 14px; }
+  .meta a { color: var(--accent); font-size: 14px; }
+  footer { margin-top: 36px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Motion reels</h1>
+  <p class="lead">Short motion videos I made with AI. Every frame is rendered from code with my Claude Code workflow, <a href="https://github.com/winchxyz/motion-studio">motion-studio</a>.</p>
+  <p class="lead">Nick Oxman · <a href="https://x.com/winchxyz">x.com/winchxyz</a> · <a href="https://github.com/winchxyz">github.com/winchxyz</a></p>
+
+  <div class="grid">
+    <div class="card tall" id="probably-motion">
+      <video controls preload="metadata" playsinline poster="posters/probably-motion-studio-ad.jpg" src="videos/probably-motion-studio-ad.mp4"></video>
+      <div class="meta"><h2>probably motion, studio ad</h2><p>30 s, vertical. An ad for a small motion design studio.</p><a href="videos/probably-motion-studio-ad.mp4">Open the video file</a></div>
+    </div>
+    <div class="card" id="hyperliquid">
+      <video controls preload="metadata" playsinline poster="posters/hyperliquid-reel.jpg" src="videos/hyperliquid-reel.mp4"></video>
+      <div class="meta"><h2>Hyperliquid reel</h2><p>30 s. A showreel piece about the Hyperliquid exchange.</p><a href="videos/hyperliquid-reel.mp4">Open the video file</a></div>
+    </div>
+    <div class="card" id="grok-bot">
+      <video controls preload="metadata" playsinline poster="posters/grok-bot-reel.jpg" src="videos/grok-bot-reel.mp4"></video>
+      <div class="meta"><h2>Grok Bot reel</h2><p>30 s. A short product reel about Grok Bot.</p><a href="videos/grok-bot-reel.mp4">Open the video file</a></div>
+    </div>
+    <div class="card" id="reddit-30">
+      <video controls preload="metadata" playsinline poster="posters/reddit-motion-reel-30s.jpg" src="videos/reddit-motion-reel-30s.mp4"></video>
+      <div class="meta"><h2>Reddit motion reel</h2><p>30 s. A motion piece about a post climbing to the front page.</p><a href="videos/reddit-motion-reel-30s.mp4">Open the video file</a></div>
+    </div>
+    <div class="card" id="reddit-15">
+      <video controls preload="metadata" playsinline poster="posters/reddit-motion-reel-15s.jpg" src="videos/reddit-motion-reel-15s.mp4"></video>
+      <div class="meta"><h2>Reddit reel, short cut</h2><p>15 s version of the Reddit piece.</p><a href="videos/reddit-motion-reel-15s.mp4">Open the video file</a></div>
+    </div>
+  </div>
+
+  <footer>Personal portfolio work. The Hyperliquid, Grok and Reddit pieces are unofficial and not affiliated with those companies. Their names and marks belong to their owners.</footer>
+</div>
+</body>
+</html>
